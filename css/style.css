@@ -1,0 +1,290 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+a{
+
+    text-decoration: none;
+    
+}
+
+/* comentarios */
+
+/*?Header*/
+
+
+
+/*
+header{
+    
+    text-align: center;
+    height: 100px;
+    background-color: black ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+    */
+
+/*
+
+header nav ul {
+
+    list-style: none;
+    /*display: flex; /* Organiza los elementos en línea */
+   /* justify-content: center; */
+    /* Centra los elementos horizontalmente 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+} 
+*/
+
+.navbar-brand img {
+
+width: 60px;
+
+}
+
+/*?Main*/
+.hero {
+
+    color: white;
+    text-align: center;
+    height: 90vh;
+    background-image: url("../img/Cross1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+  
+
+
+
+    
+}
+.hero h2{
+
+    font-size: 40px;
+    margin: 5vh;
+}
+
+.hero h3{
+
+    font-size: 20px;
+    margin: 2px;
+    
+
+}
+
+.hero h4{
+    font-size: 30px;
+    margin: 10px;
+
+}
+
+.obj{
+    color: white;
+    text-align: center;
+    height: 200px;
+    background-color: black;
+    border-color: rgb(89, 42, 165);
+}
+
+.moda {
+    color: white;
+    text-align: center;
+    /* height: 400px; */
+    background-color: black;
+}
+
+
+
+.moda .imgmoda{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px;
+   flex-wrap: wrap;
+  
+   
+}
+
+.moda .imgmoda img {
+    width: 50%;    
+    margin: 15px;
+}
+
+.preguntas{
+
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    justify-content:center;
+}
+.preguntas h2{
+
+    font-size: 25px;
+    padding: 15px;;
+
+}
+.preguntas h3 {
+
+    font-size: 20px;
+    padding: 15px ;
+}
+
+/*?Contacto*/
+
+.hero-contacto h3{
+
+    margin: 50px;
+
+}
+.hero-contacto h2{
+
+    margin: 100px;
+    align-content:end  ;
+
+}
+/*?Ubicacin galeria*/
+
+.grid-galeria {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+  }
+  .grid-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 10px 17px 5px -1px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 10px 17px 5px -1px rgba(0,0,0,0.64);
+    -moz-box-shadow: 10px 17px 5px -1px rgba(0,0,0,0.64);
+  }
+
+  .img-2{
+
+    grid-column: span 2;
+    grid-row: span 2;   
+
+  }
+
+  .img-6 {
+grid-row: span 3;
+  }
+
+.img-7{
+    grid-column: span 2;
+}
+
+@media screen and (max-width:690px)  {
+
+    .grid-galeria {
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+        gap: 15px;
+      }
+
+      .img-1{
+        grid-column: span 2;
+      }
+
+      .img-2{
+
+        grid-column: span 2;
+      
+      }
+    
+      .img-6 {
+    grid-row: span 1;
+      }
+    
+    .img-7{
+        grid-column: span 2;
+    }
+    
+
+    
+}
+
+@media screen and (max-width:200px)  {
+
+    .grid-galeria {
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+        gap: 15px;
+      }
+
+      .img-1{
+        grid-column: span 1;
+      }
+
+      .img-2{
+
+        grid-column: span 1;
+      
+      }
+    
+      .img-6 {
+    grid-row: span 1;
+      }
+    
+    .img-7{
+        grid-column: span 1;
+    }
+    
+
+    
+}
+
+/*!Footer*/
+
+img.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+
+    background-color: black;
+}
+footer {   
+    
+    height: 100px;    
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+
+}
