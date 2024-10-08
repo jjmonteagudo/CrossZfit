@@ -24,186 +24,12 @@ width: 60px;
 
 /*?Main*/
 
-.hero {
-
-    color: white;
-    text-align: center;
-    height: 90vh;
-    background-image: url("../img/Cross1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    flex-wrap: wrap;
-  
-
-
-
-    
-}
-.hero h2{
-    font-size: 40px;
-    margin: 5vh;
-}
-
-.hero h3{
-    font-size: 20px;
-    margin: 2px;  
-}
-
-.hero h4{
-    font-size: 30px;
-    margin: 10px;
-
-}
-
-
-.obj{
-    color: white;   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    flex-wrap: wrap; 
-    background-color: black;
-} 
-.obj h2{
-    font-size: 40px;
-    margin: 5vh;
-}
-
-.obj h3{
-    font-size: 20px;
-    margin: 2px;  
-}
-
-.moda {
-    color: white;
-    text-align: center;
-    /* height: 400px; */
-    background-color: black;
-}
-
-
-
-.moda .imgmoda{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 15px;
-   flex-wrap: wrap;
-  
-   
-}
-.moda h2{    
-    font-size: 40px;   
-}
-
-.moda h3{    
-    font-size: 20px;
-    margin: 2px;      
-
-}  
-.moda h4{    
-    font-size: 20px;
-    margin: 10px;      
-
-} 
-.moda h5{    
-    font-size: 15px;
-    
-} 
-
-.moda .imgmoda img {
-    width: 40%;    
-    margin: 5px;
-}
-
-.moda .imgmoda h3 {
-    font-size: 20px;
-    margin: 2px;
-}
-.moda .imgmoda h4 {
-    font-size: 15px;
-    margin: 15px;
-}
 
 
 
 
-@media screen and (max-width:750px)  {
-
-    .hero {
-
-        color: white;
-        text-align: center;
-        height: 70vh;
-        background-image: url("../img/Cross1.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-        flex-wrap: wrap;
-       }
-    .hero h2{    
-        font-size: 20px;
-        margin: 10px;
-    }
-    
-    .hero h3{    
-        font-size: 10px;
-        margin: 2px;      
-    
-    }    
-    .hero h4{
-        font-size: 15px;
-        margin: 5px;    
-    }
-    .obj h2{    
-        font-size: 20px;
-        margin: 10px;
-    }
-    
-    .obj h3{    
-        font-size: 10px;
-        margin: 2px;      
-    
-    }  
-    .moda h2{    
-        font-size: 20px;
-       
-    }
-    
-    .moda h3{    
-        font-size: 10px;
-        margin: 2px;      
-    
-    }  
-
-    .moda .imgmoda img {
-        width: 200px;    
-        margin: 5px;
-    }
-    
-    .moda .imgmoda h3 {
-        font-size: 15px;
-        margin: 2px;
-    }
-    .moda .imgmoda h4 {
-        font-size: 10px;
-        margin: 2px;
-    }
 
 
-}
 
 /*?FAQS*/
 
@@ -225,6 +51,20 @@ width: 60px;
     font-size: 20px;
     padding: 15px ;
 }
+
+.accordion .card {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .accordion .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .accordion .card-body {
+    padding: 1.5rem;
+  }
 
 /*?Contacto*/
 
@@ -393,3 +233,88 @@ footer {
 
     
 }
+.carousel-caption {
+    bottom: 50%; /* Adjuste de posicion vertial */
+    transform: translateY(-50%); /* Centrado vertical */
+}
+
+.carousel-item img {
+    height:100%; /* Ajusta el valor según tus necesidades */
+    object-fit: cover; /* Hace que la imagen llene todo el contenedor, recortando si es necesario */
+}
+.carousel-caption h5 {
+    color: #fff; /* Blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra con transparencia */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    padding: 10px;
+    border: 1px solid #fff; /* Borde blanco */
+  }
+  
+  .carousel-caption p {
+    color: #fff; /* Blanco */
+    font-size: 18px;
+    line-height: 1.5; /* Espacio entre líneas */
+    text-align: justify; /* Alineación justificada */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    padding: 10px;
+  }
+  .about-us {
+    padding: 5rem 0; /* Ajusta el espacio superior e inferior */
+    background-color: #f8f9fa; /* Color de fondo suave */
+  }
+  
+  .about-us h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+  }
+
+  .modalidades-entrenamiento {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 5rem 0;
+  }
+  
+  .table {
+    border: 1px solid #ddd; /* Borde de la tabla */
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  
+ 
+
+@media (max-width: 767px) {
+    .carousel-caption {
+      bottom: 20%;
+    }
+    .carousel-caption h5 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .carousel-caption {
+      bottom: 1%;
+    }
+    .carousel-caption h5 {
+      font-size: 0.6rem;
+    }
+    .carousel-caption p {
+        font-size: 0.5rem;
+      }
+  }
