@@ -234,7 +234,7 @@ footer {
     
 }
 .carousel-caption {
-    bottom: 50%; /* Adjuste de posicion vertial */
+    bottom: 40%; /* Adjuste de posicion vertial */
     transform: translateY(-50%); /* Centrado vertical */
 }
 
