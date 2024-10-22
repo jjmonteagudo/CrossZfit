@@ -1,6 +1,13 @@
-@import url(./base/_generales.scss);
-@import url(./base/_queries.scss);
-@import url(./base/_sass.scss);
-@import url(./components/_footer.scss);
-@import url(./components/_header.scss);
-@import url(./components/_main.scss);
+
+
+@import "./base/sass";
+@import "./base/generales";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+@import "./base/queries";
+
+
+
+
+

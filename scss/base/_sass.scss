@@ -1,9 +1,50 @@
 
-
 /* Funcionalidades*/
 
-/* variables*/
 
-$color-principal:black ;
-$color-secundario: red;
-$color-terciario: white;
+
+/* VARIABLES*/
+
+$color-principal: white;
+$mq-galeria2: 500px;
+$mq-galeria1: 690px;
+$mq-footer: 500px;
+$mq-main: 965px;
+
+
+/*LISTAS */
+$colores-paleta: rgb(33, 37, 41), $color-principal;
+$size: 16px, 22px, 25px;
+
+/* EXTENDS */
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contenedor {
+
+    @extend %flex-center;
+}
+
+
+/* MIXIN    */
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+.card-back {
+    @include flex(flex, space-around, center)
+}
+
+.card-front {
+
+    @include flex(flex, space-around, center)
+}

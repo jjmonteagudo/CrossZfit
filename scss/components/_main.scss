@@ -1,0 +1,212 @@
+/*index*/
+.carousel-caption {
+    bottom: 40%;
+    /* Adjuste de posicion vertial */
+    transform: translateY(-50%);
+    /* Centrado vertical */
+}
+
+.carousel-item img {
+    height: 100%;
+    /* Ajusta el valor según tus necesidades */
+    object-fit: cover;
+    /* Hace que la imagen llene todo el contenedor, recortando si es necesario */
+}
+
+.carousel-caption h5 {
+    color: #fff;
+    /* Blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra negra con transparencia */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo blanco semitransparente */
+    padding: 10px;
+    border: 1px solid #fff;
+    /* Borde blanco */
+}
+
+.carousel-caption p {
+    color: #fff;
+    /* Blanco */
+    font-size: 18px;
+    line-height: 1.5;
+    /* Espacio entre líneas */
+    text-align: justify;
+    /* Alineación justificada */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo blanco semitransparente */
+    padding: 10px;
+}
+
+.about-us {
+    padding: 5rem 0;
+    /* Ajusta el espacio superior e inferior */
+    background-color: #f8f9fa;
+    /* Color de fondo suave */
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.modalidades-entrenamiento {
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+    padding: 5rem 0;
+}
+
+.table {
+    border: 1px solid #ddd;
+    /* Borde de la tabla */
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/*?FAQS*/
+
+
+.accordion .card {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.accordion .card-body {
+    padding: 1.5rem;
+}
+
+/*?Contacto*/
+
+
+/*?Tienda*/
+
+/*
+.contenedor{
+
+    .card{
+
+        .card-inner{
+
+            .card-front{
+
+            }
+            .card-back{
+
+            }
+        }
+    }
+}*/
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.figure {
+
+    width: 70%;
+}
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: black;
+    color: #fff;
+
+ 
+    border: 10px solid white;
+    border-radius: 10px;
+
+    font-size: 24px;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-color: white;
+    color: black;
+
+
+    border: 10px solid black;
+    border-radius: 10px;
+
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+/*?Galeria*/
+
+.grid-galeria {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 10px 17px 5px -1px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 10px 17px 5px -1px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 10px 17px 5px -1px rgba(0, 0, 0, 0.64);
+}
+
+.img-2 {
+
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+.img-6 {
+    grid-row: span 3;
+}
+
+.img-7 {
+    grid-column: span 2;
+}
