@@ -1,0 +1,49 @@
+@use "../variables" as *;
+
+// Mobile-first: 1 columna, 2 desde $bp-md... 3 desde $bp-lg
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 2rem 15px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1; // en celular las fotos (cuadradas, con texto) se ven enteras
+    object-fit: cover;
+    box-shadow: var(--sombra-foto);
+  }
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+
+    img {
+      aspect-ratio: auto;
+    }
+
+    .img-1,
+    .img-2,
+    .img-7 {
+      grid-column: span 2;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, 1fr);
+
+    .img-1 {
+      grid-column: auto;
+    }
+
+    .img-2 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .img-6 {
+      grid-row: span 3;
+    }
+  }
+}
