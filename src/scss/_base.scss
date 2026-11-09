@@ -1,0 +1,115 @@
+@use "variables" as *;
+
+html {
+  scroll-padding-top: $alto-navbar;
+}
+
+body {
+  padding-top: $alto-navbar; // la navbar es fixed-top y tapaba el contenido
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-nav .nav-link {
+  font-family: var(--fuente-titulos);
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3,
+h4 {
+  font-weight: 500;
+}
+
+// Botón principal con el color de la marca (texto negro para buen contraste)
+.btn-acento {
+  --bs-btn-color: #000;
+  --bs-btn-bg: var(--color-acento);
+  --bs-btn-border-color: var(--color-acento);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: var(--color-acento-hover);
+  --bs-btn-hover-border-color: var(--color-acento-hover);
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: var(--color-acento-hover);
+  --bs-btn-active-border-color: var(--color-acento-hover);
+  font-family: var(--fuente-titulos);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+// Botón flotante de WhatsApp
+.whatsapp-flotante {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1030;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: 3px solid #ffc107;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.5rem 1rem;
+  background: var(--color-claro);
+  color: var(--color-negro);
+
+  &:focus {
+    top: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

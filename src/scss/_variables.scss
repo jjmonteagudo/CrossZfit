@@ -1,0 +1,19 @@
+// Breakpoints (mobile-first: se aplican desde ese ancho hacia arriba)
+$bp-sm: 500px;
+$bp-md: 690px;
+$bp-lg: 992px;
+
+$alto-navbar: 76px;
+
+:root {
+  --color-oscuro: #212529;
+  --color-negro: #000;
+  --color-claro: #fff;
+  --color-fondo-suave: #f8f9fa;
+  --color-texto: #333;
+  --color-texto-suave: #555;
+  --sombra-foto: 6px 10px 12px -2px rgba(0, 0, 0, 0.45);
+  --color-acento: #ff6a13; // naranja de la marca (el de las fotos del box)
+  --color-acento-hover: #ff8540;
+  --fuente-titulos: "Oswald", "Arial Narrow", sans-serif;
+}
