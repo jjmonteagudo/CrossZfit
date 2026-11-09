@@ -11,6 +11,7 @@
     "images": "node scripts/optimizar-imagenes.js"
   },
   "dependencies": {
+    "@fontsource/oswald": "^5.2.5",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3"
   },

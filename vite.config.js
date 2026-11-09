@@ -58,7 +58,11 @@ function footer() {
       <li><a href="https://wa.me/${WHATSAPP}" target="_blank" rel="noopener" aria-label="WhatsApp de CrossZfit">
         <img src="/src/img/whatsapp.webp" width="40" height="40" alt=""></a></li>
     </ul>
-  </footer>`;
+  </footer>
+  <a class="whatsapp-flotante" href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hola CrossZfit! Quiero hacer una consulta.')}"
+    target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <img src="/src/img/whatsapp-blanco.svg" width="34" height="34" alt="">
+  </a>`;
 }
 
 // Reemplaza <!-- @header --> y <!-- @footer --> en cada página

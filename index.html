@@ -13,9 +13,42 @@
   <meta property="og:title" content="CrossZfit | Entrenamientos de Alta Intensidad">
   <meta property="og:description"
     content="Descubrí nuestro box de CrossFit y transformá tu cuerpo y mente con entrenamientos personalizados y desafiantes.">
+  <meta property="og:image" content="https://jjmonteagudo.github.io/CrossZfit/og-imagen.jpg">
   <meta property="og:url" content="https://jjmonteagudo.github.io/CrossZfit/">
-  <meta property="og:image"
-    content="https://images.unsplash.com/photo-1609265490702-78689c867e36?q=80&w=1200&auto=format&fit=crop">
+  <link rel="canonical" href="https://jjmonteagudo.github.io/CrossZfit/">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "CrossZfit",
+  "url": "https://jjmonteagudo.github.io/CrossZfit/",
+  "image": "https://jjmonteagudo.github.io/CrossZfit/og-imagen.jpg",
+  "telephone": "+598 94 522 752",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -34.83505,
+    "longitude": -56.1997
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Montevideo",
+    "addressCountry": "UY"
+  },
+  "priceRange": "$U 1300 - $U 1800",
+  "openingHours": [
+    "Mo,We,Fr 08:00-12:00",
+    "Mo,We,Fr 16:00-22:00",
+    "Tu,Th 08:00-12:00",
+    "Tu,Th 17:00-21:00",
+    "Sa 09:00-12:00"
+  ],
+  "sameAs": [
+    "https://www.instagram.com/crosszfit/",
+    "https://www.facebook.com/profile.php?id=598626583"
+  ]
+}
+  </script>
 
   <link rel="icon" href="./favicon.ico">
   <script type="module" src="/src/main.js"></script>
@@ -45,6 +78,7 @@
               <h2>Nuestros objetivos</h2>
               <p>Promover un estilo de vida saludable, crear una comunidad fuerte y ayudarte a alcanzar tus metas:
                 perder peso, ganar fuerza o mejorar tu rendimiento deportivo.</p>
+              <a class="btn btn-acento btn-lg mt-3" href="https://wa.me/59894522752?text=Hola%20CrossZfit%21%20Quiero%20reservar%20una%20clase%20de%20prueba." target="_blank" rel="noopener">Reservá tu clase de prueba</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -52,7 +86,7 @@
             <div class="carousel-caption">
               <h2>Nuestro equipo de coaches</h2>
               <p>Coaches certificados, preparados y comprometidos con que encuentres tu mejor versión.</p>
-              <a class="btn btn-light mt-2" href="#equipo">Conocé al equipo</a>
+              <a class="btn btn-acento mt-2" href="#equipo">Conocé al equipo</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -62,6 +96,7 @@
               <h2>Bienestar integral</h2>
               <p>Además del entrenamiento físico, nos importa tu salud mental y emocional. Organizamos eventos sociales
                 y actividades que fomentan el compañerismo.</p>
+              <a class="btn btn-acento mt-2" href="#filosofia">Nuestra filosofía</a>
             </div>
           </div>
         </div>
@@ -78,7 +113,7 @@
 
     <section id="quienes" class="about-us">
       <div class="container">
-        <div class="row align-items-center g-5">
+        <div class="row align-items-center g-4 g-lg-5">
           <div class="col-md-6 text-center">
             <figure class="figure">
               <img src="/src/img/crossz7.webp" width="871" height="864" loading="lazy"
@@ -176,51 +211,73 @@
         <h2 class="text-center">Descubrí cómo entrenar CrossFit con nosotros</h2>
         <p class="text-center mb-5">Clases dinámicas y adaptadas a todos los niveles</p>
 
-        <div class="row g-5">
+        <div class="row g-4 g-lg-5 align-items-center mb-5">
           <div class="col-lg-5">
             <h3>Estructura de una clase</h3>
-            <ul>
+            <ul class="estructura">
               <li><strong>Calentamiento:</strong> prepará tu cuerpo para el entrenamiento.</li>
               <li><strong>Desarrollo de habilidades:</strong> perfeccioná tu técnica.</li>
               <li><strong>WOD:</strong> poné a prueba tu fuerza y resistencia.</li>
             </ul>
           </div>
-
           <div class="col-lg-7">
-            <h3>Modalidades de asistencia</h3>
-            <p>Elegí la opción que mejor se adapte a vos:</p>
-            <div class="table-responsive">
-              <table class="table table-dark table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Modalidad</th>
-                    <th scope="col">Frecuencia</th>
-                    <th scope="col">Precio mensual</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Opción 1</td>
-                    <td>2 veces por semana</td>
-                    <td>$U 1300</td>
-                  </tr>
-                  <tr>
-                    <td>Opción 2</td>
-                    <td>3 veces por semana</td>
-                    <td>$U 1500</td>
-                  </tr>
-                  <tr>
-                    <td>Opción 3</td>
-                    <td>Ilimitado</td>
-                    <td>$U 1800</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p>Consultá nuestros horarios y reservá tu clase:</p>
-            <img src="/src/img/horarios.webp" width="495" height="343" loading="lazy" class="img-fluid"
-              alt="Grilla de horarios de clases de CrossZfit">
+            <h3 id="planes">Planes</h3>
+            <div class="row g-3">
+          <div class="col-md-4">
+            <article class="plan">
+              <h4 class="plan__nombre">2 veces</h4>
+              <p class="plan__sub">por semana</p>
+              <p class="plan__precio"><span>$U</span> 1300<small>/mes</small></p>
+              <a class="btn btn-outline-light w-100" href="https://wa.me/59894522752?text=Hola%20CrossZfit%21%20Me%20interesa%20el%20plan%202%20veces%20por%20semana%20%28%24U%201300%29." target="_blank" rel="noopener">Quiero este plan</a>
+            </article>
           </div>
+          <div class="col-md-4">
+            <article class="plan">
+              <h4 class="plan__nombre">3 veces</h4>
+              <p class="plan__sub">por semana</p>
+              <p class="plan__precio"><span>$U</span> 1500<small>/mes</small></p>
+              <a class="btn btn-outline-light w-100" href="https://wa.me/59894522752?text=Hola%20CrossZfit%21%20Me%20interesa%20el%20plan%203%20veces%20por%20semana%20%28%24U%201500%29." target="_blank" rel="noopener">Quiero este plan</a>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="plan plan--destacado">
+              <h4 class="plan__nombre">Ilimitado</h4>
+              <p class="plan__sub">todas las clases que quieras</p>
+              <p class="plan__precio"><span>$U</span> 1800<small>/mes</small></p>
+              <a class="btn btn-acento w-100" href="https://wa.me/59894522752?text=Hola%20CrossZfit%21%20Me%20interesa%20el%20plan%20ilimitado%20%28%24U%201800%29." target="_blank" rel="noopener">Quiero este plan</a>
+            </article>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="horarios" class="text-center">Horarios</h3>
+        <p class="text-center">
+          <span class="leyenda leyenda--cross">Cross</span> clase guiada por un coach ·
+          <span class="leyenda leyenda--open">Open box</span> entrenamiento libre
+        </p>
+        <div class="table-responsive horarios">
+          <table class="table table-dark mb-0">
+            <caption class="visually-hidden">Horarios de clases de lunes a sábado</caption>
+            <thead>
+              <tr><th scope="col">Hora</th><th scope="col"><abbr title="Lunes">Lun</abbr></th><th scope="col"><abbr title="Martes">Mar</abbr></th><th scope="col"><abbr title="Miércoles">Mié</abbr></th><th scope="col"><abbr title="Jueves">Jue</abbr></th><th scope="col"><abbr title="Viernes">Vie</abbr></th><th scope="col"><abbr title="Sábado">Sáb</abbr></th></tr>
+            </thead>
+            <tbody>
+                  <tr><th scope="row">8:00 a 9:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+                  <tr><th scope="row">9:00 a 10:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td></tr>
+                  <tr><th scope="row">10:00 a 11:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td></tr>
+                  <tr><th scope="row">11:00 a 12:00</th><td class="h-open">Open box</td><td class="h-open">Open box</td><td class="h-open">Open box</td><td class="h-open">Open box</td><td class="h-open">Open box</td><td class="h-open">Open box</td></tr>
+                  <tr><th scope="row">16:00 a 17:00</th><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+                  <tr><th scope="row">17:00 a 18:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+                  <tr><th scope="row">18:00 a 19:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+                  <tr><th scope="row">19:00 a 20:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+                  <tr><th scope="row">20:00 a 21:00</th><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+                  <tr><th scope="row">21:00 a 22:00</th><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td><td class="h-cross">Cross</td><td class="h-vacio"><span class="visually-hidden">Sin clase</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-5">
+          <a class="btn btn-acento btn-lg" href="https://wa.me/59894522752?text=Hola%20CrossZfit%21%20Quiero%20reservar%20una%20clase%20de%20prueba." target="_blank" rel="noopener">Reservá tu clase de prueba</a>
         </div>
       </div>
     </section>

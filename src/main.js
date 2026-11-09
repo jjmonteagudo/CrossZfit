@@ -1,3 +1,5 @@
+import '@fontsource/oswald/latin-500.css';
+import '@fontsource/oswald/latin-700.css';
 import './scss/bootstrap.scss';
 import './scss/estilos.scss';
 
