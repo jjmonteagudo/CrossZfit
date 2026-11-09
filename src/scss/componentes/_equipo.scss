@@ -1,0 +1,90 @@
+@use "../variables" as *;
+
+.filosofia {
+  padding: 5rem 0;
+  background: var(--color-oscuro);
+  color: var(--color-claro);
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+}
+
+.equipo {
+  padding: 5rem 0;
+  background: var(--color-fondo-suave);
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--color-texto);
+  }
+}
+
+.coach {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--color-claro);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  &__avatar {
+    display: grid;
+    place-items: center;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: var(--color-negro);
+    color: var(--color-claro);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__nombre {
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+  }
+
+  &__rol {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-texto-suave);
+  }
+
+  &__credenciales {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+    color: var(--color-texto);
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  &__cita {
+    margin: 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e5e5e5;
+    font-style: italic;
+    color: var(--color-texto-suave);
+    line-height: 1.6;
+
+    p {
+      margin: 0;
+    }
+  }
+}

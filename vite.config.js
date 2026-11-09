@@ -8,6 +8,7 @@ const WHATSAPP = '59894522752';
 const PAGINAS = [
   { archivo: 'index.html', texto: 'Inicio' },
   { archivo: 'index.html#quienes', texto: '¿Quiénes somos?' },
+  { archivo: 'index.html#equipo', texto: 'Equipo' },
   { archivo: 'index.html#modalidades', texto: 'Modalidades' },
   { archivo: 'pages/galeria.html', texto: 'Galería' },
   { archivo: 'pages/tienda.html', texto: 'Tienda' },
